@@ -1,146 +1,178 @@
-# Surviving a Major Ransomware Event
+<h1 align="center">
+🛡️ Surviving a Major Ransomware Event
+</h1>
 
-## Overview
-In December, our environment experienced a ransomware event that impacted over **150 endpoints and critical infrastructure systems**. Immediate containment, system recovery, and infrastructure rebuilding were required to restore business operations.
-
-The recovery process involved rebuilding domain infrastructure, restoring server backups and cloud data, reimaging compromised endpoints, and strengthening the security posture of the environment moving forward.
+<p align="center">
+<span style="color:#f97316"><b>Incident Response</b></span> •
+<span style="color:#22c55e"><b>Infrastructure Recovery</b></span> •
+<span style="color:#f97316"><b>Endpoint Remediation</b></span>
+</p>
 
 ---
 
-## Incident Timeline
+## 🟠 Overview
+
+In **December**, our environment experienced a ransomware event impacting **150+ endpoints and critical infrastructure systems**.
+
+The recovery required:
+
+- Full **endpoint rebuilds**
+- **Domain controller reconstruction**
+- **Server backup restoration**
+- **Cloud data recovery**
+- Migration to a modern **Hybrid Active Directory + Intune** environment
+
+The response required **Christmas hours, weekend recovery work, and coordination with MSP partners and enterprise recovery vendors** to restore operations quickly and securely.
+
+---
+
+## 🟢 Incident Timeline
 
 ### Initial Compromise
-- Suspicious system behavior and widespread endpoint impact identified
-- Multiple systems displaying ransomware indicators
-- Workstations and servers taken offline to prevent further spread
+- Suspicious activity detected across endpoints
+- Multiple workstations showing ransomware indicators
+- Systems isolated to prevent further lateral movement
 
 ### Containment
-- Isolated compromised endpoints from the network
-- Assessed affected infrastructure including servers and domain services
-- Identified scope of impact across the environment
+- Compromised endpoints removed from network
+- Server and domain services assessed for integrity
+- Recovery plan coordinated with internal IT and vendor partners
 
 ---
 
-## Recovery Operations
+## 🟠 Recovery Operations
 
 ### Endpoint Recovery
 - Reimaged **150+ compromised endpoints**
-- Rejoined devices to the domain
-- Restored user profiles and workstation configurations
-- Verified systems before returning them to production
+- Rejoined devices to Active Directory
+- Restored user profiles and configurations
+- Validated systems before returning to production
 
 ### Data Recovery
-- Restored user files from **OneDrive**
-- Recovered critical server data from verified backups
-- Validated integrity of restored files and services
+- Restored user data from **OneDrive**
+- Recovered server data from **verified backups**
+- Validated file integrity and restored services
 
 ---
 
-## Infrastructure Rebuild
+## 🟢 Infrastructure Rebuild
 
 ### Domain Services
 - Rebuilt **Domain Controllers**
 - Restored **Active Directory services**
-- Reconfigured DNS and authentication services
+- Reconfigured DNS and authentication systems
 
 ### Server Restoration
-- Restored application servers from backup
-- Verified service functionality across the environment
+- Restored critical application servers
+- Verified production services across the environment
 
 ---
 
-## Endpoint Protection Migration
+## 🟠 Endpoint Protection Migration
 
-The environment previously used **Comodo Endpoint Security**. During recovery, the organization migrated to **CrowdStrike Falcon** for improved endpoint protection and threat detection.
+The organization previously used **Comodo Endpoint Security**.
+
+During recovery the environment transitioned to:
+
+🛡 **CrowdStrike Falcon**
 
 ### Security Changes
-- Removed legacy **Comodo security agents**
-- Installed **CrowdStrike Falcon** across all endpoints
-- Standardized endpoint protection platform
 
-### Agent Removal Challenges
-Some endpoints required use of the **Comodo AV Agent Removal Tool** due to administrative password restrictions preventing normal removal.
+- Removed legacy **Comodo security agents**
+- Installed **CrowdStrike Falcon across all endpoints**
+- Standardized enterprise endpoint protection
+
+### Removal Challenges
+
+Some endpoints required use of the **Comodo AV Agent Removal Tool** when administrative passwords failed to uninstall the agent.
 
 During forced removal:
 
-- 3 endpoints became unbootable
-- Systems required recovery or full reimage
-- Highlighted risks associated with legacy security agents during incident response
+- **3 endpoints became unbootable**
+- Required recovery or full system reimage
+- Highlighted risks of legacy security tooling during incident response
 
 ---
 
-## Security Improvements
+## 🟢 Security Improvements
 
-Following recovery, several improvements were implemented to strengthen the environment.
+Following the recovery effort, several improvements were implemented.
 
 ### Device Management Modernization
+
 - Implemented **Microsoft Intune**
-- Established **Hybrid Active Directory environment**
-- Enabled centralized device compliance and management
+- Established **Hybrid Active Directory**
+- Centralized device compliance and management
 
 ### Endpoint Security Hardening
-- Standardized endpoint protection using CrowdStrike
-- Updated security policies
-- Improved monitoring and remediation procedures
+
+- Standardized endpoint protection with **CrowdStrike**
+- Updated endpoint security policies
+- Improved monitoring and remediation workflows
 
 ---
 
-## Technologies & Infrastructure Involved
+## 🟠 Technologies & Infrastructure Involved
 
 ### Identity & Directory Services
+
 - Active Directory (AD DS)
-- Domain Controller rebuild & promotion
+- Domain Controller rebuild
 - Hybrid Active Directory
 - Azure AD / Microsoft Entra ID
 - Group Policy Objects (GPO)
 
 ### Endpoint Management
+
 - Microsoft Intune
 - Hybrid Azure AD Join
-- Device enrollment and compliance policies
+- Device compliance policies
 - Endpoint provisioning and lifecycle management
 
 ### Security Stack
-- CrowdStrike Falcon (Endpoint Detection & Response)
+
+- CrowdStrike Falcon (EDR)
 - Comodo Endpoint Security (legacy AV)
-- Malware remediation and endpoint hardening
+- Malware remediation
+- Endpoint security hardening
 
 ### Infrastructure
+
 - Windows Server
 - DNS & DHCP
 - Enterprise endpoint environment
-- Production warehouse IT infrastructure
+- Warehouse production IT infrastructure
 
 ---
 
-## Technical Skills Demonstrated
+## 🟢 Technical Skills Demonstrated
 
-- Incident response and containment
-- Endpoint recovery and OS deployment
+- Incident response & containment
+- Enterprise endpoint recovery
 - Active Directory infrastructure rebuild
 - Server backup restoration
 - Cloud data recovery (OneDrive)
-- Endpoint protection migration
-- Enterprise endpoint management
+- Antivirus migration & endpoint protection deployment
 - Hybrid identity implementation
+- Enterprise device management with Intune
 
 ---
 
-## Lessons Learned
+## 🟠 Lessons Learned
 
-This incident reinforced several key operational and security principles:
+This event reinforced several operational and security principles:
 
-- Importance of reliable and tested backups
-- Risks associated with legacy security tools
-- Value of centralized device management
-- Importance of rapid containment and recovery procedures
+- Importance of **tested backups**
+- Risks associated with **legacy security agents**
+- Value of **centralized endpoint management**
+- Need for **rapid containment procedures**
 
-The environment was successfully restored and strengthened with improved endpoint management and security controls.
+The organization returned to full operations with a **stronger, more resilient infrastructure**.
 
 ---
 
-## Wav Tech
+## 🟢 Wav Tech
 
-**Infrastructure | Security | Incident Response**
+**Infrastructure • Security • Incident Response**
 
-Documenting real-world infrastructure challenges and recovery operations.
+Documenting real-world infrastructure challenges, recovery operations, and enterprise security improvements.
