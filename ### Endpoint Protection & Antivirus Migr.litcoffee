@@ -1,4 +1,4 @@
-### Endpoint Protection & Antivirus Migration
+Endpoint Protection & Antivirus Migration
 - Legacy antivirus removal (Comodo Security)
 - Deployment of CrowdStrike Falcon endpoint protection
 - Endpoint security standardization across the environment
