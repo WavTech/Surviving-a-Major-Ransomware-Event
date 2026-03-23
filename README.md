@@ -12,7 +12,7 @@
 
 ## 🟠 Overview
 
-In **December**, our environment experienced a ransomware event impacting **150+ endpoints and critical infrastructure systems**.
+In **December**, our environment experienced a ransomware event impacting **300+ endpoints and critical infrastructure systems**.
 
 The recovery required:
 
