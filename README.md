@@ -43,7 +43,7 @@ The response required **Christmas hours, weekend recovery work, and coordination
 ## 🟠 Recovery Operations
 
 ### Endpoint Recovery
-- Reimaged **150+ compromised endpoints**
+- Reimaged **300+ compromised endpoints**
 - Rejoined devices to Active Directory
 - Restored user profiles and configurations
 - Validated systems before returning to production
